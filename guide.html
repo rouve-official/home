@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>ROUVE 가이드로 이동 중</title>
-  <script>
-    // 사장님의 구글 가이드 주소로 자동 리다이렉트
-    window.location.href = "https://script.google.com/macros/s/AKfycbzTBeyNthwnr-AqFkVw9X6PUZqMp8pulI3qdAayOw9zKjtQ5MVuX6jA5bXB14zxFJkASw/exec?mode=guide";
-  </script>
+    <meta charset="UTF-8">
+    <title>ROUVE 가이드 페이지</title>
+    
+    <link rel="dns-prefetch" href="https://script.google.com">
+    <link rel="preconnect" href="https://script.google.com" crossorigin>
+    <link rel="preconnect" href="https://script.googleusercontent.com" crossorigin>
+
+    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbzTBeyNthwnr-AqFkVw9X6PUZqMp8pulI3qdAayOw9zKjtQ5MVuX6jA5bXB14zxFJkASw/exec?mode=guide">
+
+    <script type="text/javascript">
+        // 가장 빠른 자바스크립트 리다이렉트
+        window.location.replace("https://script.google.com/macros/s/AKfycbzTBeyNthwnr-AqFkVw9X6PUZqMp8pulI3qdAayOw9zKjtQ5MVuX6jA5bXB14zxFJkASw/exec?mode=guide");
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .loader-container { text-align: center; }
+        .spinner {
+            width: 40px; height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1a73e8; /* 루브 브랜드 블루 */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
 </head>
 <body>
-  <p>가이드 페이지로 이동하고 있습니다. 잠시만 기다려주세요...</p>
+    <div class="loader-container">
+        <div class="spinner"></div>
+        <p>ROUVE 이용 가이드로 이동 중입니다...</p>
+    </div>
 </body>
 </html>
