@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <title>ROUVE Music 연습실 예약</title>
+    
+    <link rel="dns-prefetch" href="https://script.google.com">
+    <link rel="preconnect" href="https://script.google.com" crossorigin>
+    <link rel="preconnect" href="https://script.googleusercontent.com" crossorigin>
+
     <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbzTBeyNthwnr-AqFkVw9X6PUZqMp8pulI3qdAayOw9zKjtQ5MVuX6jA5bXB14zxFJkASw/exec?p=music">
-    <title>ROUVE Music 예약 시스템</title>
-    <script>
-        // 자바스크립트로 한 번 더 확실하게 보냅니다.
-        const targetUrl = "https://script.google.com/macros/s/AKfycbzTBeyNthwnr-AqFkVw9X6PUZqMp8pulI3qdAayOw9zKjtQ5MVuX6jA5bXB14zxFJkASw/exec?p=music";
-        window.location.replace(targetUrl);
+
+    <script type="text/javascript">
+        // 가장 빠른 자바스크립트 리다이렉트
+        window.location.replace("https://script.google.com/macros/s/AKfycbzTBeyNthwnr-AqFkVw9X6PUZqMp8pulI3qdAayOw9zKjtQ5MVuX6jA5bXB14zxFJkASw/exec?p=music");
     </script>
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .loader-container { text-align: center; }
+        .spinner {
+            width: 40px; height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1a73e8; /* 루브 포인트 블루 */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
 </head>
-<body style="background:#ffffff; display:flex; justify-content:center; align-items:center; height:100vh;">
-    <p>예약 페이지로 이동 중입니다... 잠시만 기다려주세요.</p>
+<body>
+    <div class="loader-container">
+        <div class="spinner"></div>
+        <p>ROUVE Music 예약 페이지로 이동 중입니다...</p>
+    </div>
 </body>
 </html>
